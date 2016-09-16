@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_below="@id/lblUpcoming"
+    android:layout_alignLeft="@id/lblUpcoming"
+    android:layout_marginRight="25dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginTop="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/lblMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:text="Aug"
+            android:textColor="#ABABAB"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/lblDayNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/lblMonth"
+            android:textColor="#646366"/>
+
+        <TextView
+            android:id="@+id/lblTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/lblMonth"
+            android:layout_marginLeft="20dp"
+            android:text="21 Days of Prayer"
+            android:layout_alignTop="@id/lblMonth"
+            android:textSize="25sp"
+            android:textColor="@color/colorJourneyBlue"/>
+        <ImageView
+            android:id="@+id/locationImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/location_icon"
+            android:layout_below="@id/lblTitle"
+            android:layout_alignLeft="@id/lblTitle"/>
+        <TextView
+            android:id="@+id/lblLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Journey Church"
+            android:layout_toRightOf="@id/locationImage"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/lblTitle"
+            android:textSize="15sp"
+            android:textColor="#ABABAB"/>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:stateListAnimator="@null"
+            android:layout_height="40dp"
+            android:text="SAVE"
+            android:background="#FFFFFF"
+            android:textColor="@color/colorJourneyBlue"
+            android:layout_alignParentBottom="true"
+            />
+        <ImageView
+            android:id="@+id/clockImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/clock_icon"
+            android:layout_alignTop="@+id/saveButton"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/lblLocation"
+            android:layout_toEndOf="@+id/lblLocation" />
+        <TextView
+            android:id="@+id/lblTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9:00 am - 10:15 am"
+            android:textColor="#646366"
+            android:textSize="13sp"
+            android:layout_alignTop="@id/clockImage"
+            android:layout_toRightOf="@id/clockImage"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="2dp" />
+        <ImageView
+            android:id="@+id/calendarImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/calendar_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"/>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

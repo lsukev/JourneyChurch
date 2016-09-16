@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainActivity">
+<ImageView
+    android:id="@+id/welcomeImage"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/welcome"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@id/welcomeImage"
+        android:layout_alignLeft="@id/welcomeImage"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@color/colorJourneyBlue"
+        android:text="// WELCOME"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="22sp"
+        android:textColor="@color/colorJourneyBlue"
+        android:text="TO JOURNEY"
+        android:id="@+id/textView4"
+        android:layout_above="@+id/textView2"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginLeft="5dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/view"
+        android:background="@color/colorJourneyBlue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignEnd="@id/welcomeImage"
+        android:layout_alignRight="@id/welcomeImage"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="At Journey Church, our doors are wide open to people from all backgrounds, regardless of where you are on your spiritual journey. Our goal is to infuse life and God's love into people and families through engaging, powerful worship services that offer biblical truth in relevant practical ways."
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/btnFacebook"
+        android:background="@drawable/facebook_logo"
+
+        android:layout_above="@+id/view"
+        android:layout_toLeftOf="@+id/btnTwitter"
+        android:layout_toStartOf="@+id/btnTwitter"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="social media:"
+        android:textColor="@color/colorJourneyBlue"
+        android:id="@+id/textView3"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_above="@+id/btnTwitter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/btnTwitter"
+        android:layout_above="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/twitter_logo"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="30dp" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/btnMail"
+        android:background="@drawable/instagram_logo"
+        android:layout_alignTop="@+id/btnTwitter"
+        android:layout_toRightOf="@id/btnTwitter"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="15dp" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/btnGrow"
+        android:layout_below="@+id/btnTwitter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/grow_icon" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/btnServe"
+        android:layout_alignBottom="@+id/btnGrow"
+      android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/serve_icon" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SERVE"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/btnServe"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnGrow"
+        android:layout_centerHorizontal="true"
+        android:text="GROW"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"/>
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/btnConnect"
+        android:layout_alignBottom="@+id/btnGrow"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/connect_icon" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONNECT"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:id="@+id/btnTextConnect"
+        android:layout_below="@id/btnConnect"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp" />
+
+</RelativeLayout>

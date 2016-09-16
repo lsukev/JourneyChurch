@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lsukev.journeychurch.fragments.OurStoryFragment">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:id="@+id/ourStoryImage"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ourstory_banner" />
+
+    <TextView
+        android:id="@+id/lblOur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ourStoryImage"
+        android:layout_alignLeft="@id/ourStoryImage"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/colorJourneyBlue"
+        android:text="// OUR"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lblOur"
+        android:layout_alignTop="@id/lblOur"
+        android:layout_marginLeft="6dp"
+        android:text="STORY"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorJourneyBlue"/>
+
+    <TextView
+        android:id="@+id/lblOurStoryBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblOur"
+        android:layout_alignLeft="@id/lblOur"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:text="@string/our_story"
+        android:textIsSelectable="false" />
+</RelativeLayout>
+    </ScrollView>
+</FrameLayout>

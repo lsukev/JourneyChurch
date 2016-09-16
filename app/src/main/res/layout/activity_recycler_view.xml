@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/lblUpcoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="// UPCOMING"
+        android:textSize="22sp"
+        android:textColor="@color/colorJourneyBlue"/>
+    <TextView
+        android:id="@+id/lblEvents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lblUpcoming"
+        android:layout_alignBottom="@id/lblUpcoming"
+        android:layout_marginLeft="7dp"
+        android:text="EVENTS"
+        android:textSize="22sp"
+        android:textColor="@color/colorJourneyBlue"
+        android:textStyle="bold"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@id/lblUpcoming"
+        android:id="@+id/rv">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

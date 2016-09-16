@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lsukev.journeychurch.CGSActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/cgsImage"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/cgs_banner"/>
+
+            <TextView
+                android:id="@+id/lblClasses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cgsImage"
+                android:layout_alignLeft="@id/cgsImage"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="// CLASSES"
+                android:textColor="@color/colorJourneyBlue"/>
+
+            <TextView
+                android:id="@+id/lblConnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblClasses"
+                android:layout_alignLeft="@id/lblClasses"
+                android:layout_marginTop="15dp"
+                android:text="CONNECT"
+                android:textSize="19sp"
+                android:textColor="#4F4F4F"/>
+
+            <TextView
+                android:id="@+id/lblConnectBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblConnect"
+                android:layout_alignLeft="@id/lblClasses"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="25dp"
+                android:text="Connect will help you to understand what our vision is here at Journey as well as our belief system and history."
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/lblGrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblConnectBody"
+                android:layout_alignLeft="@id/lblClasses"
+                android:layout_marginTop="40dp"
+                android:text="GROW"
+                android:textColor="#4F4F4F"
+                android:textSize="19sp"/>
+
+            <TextView
+                android:id="@+id/lblGrowBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblGrow"
+                android:layout_alignLeft="@id/lblClasses"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="25dp"
+                android:text="@string/grow_body"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/lblServe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblGrowBody"
+                android:layout_alignLeft="@id/lblClasses"
+                android:layout_marginTop="40dp"
+                android:text="SERVE"
+                android:textSize="19dp"
+                android:textColor="#4F4F4F"/>
+
+            <TextView
+                android:id="@+id/lblServeBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblServe"
+                android:layout_alignLeft="@id/lblClasses"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="25dp"
+                android:text="@string/serve_body"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
